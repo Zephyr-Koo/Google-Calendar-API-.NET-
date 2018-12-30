@@ -24,7 +24,6 @@ Module Program
             .ApplicationName = ApplicationName
         })
 
-
         Console.WriteLine("BEFORE")
         DisplayUpcomingEvent(service)
 
