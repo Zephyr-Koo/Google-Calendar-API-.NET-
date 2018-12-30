@@ -61,11 +61,11 @@ namespace Zephyr.TestDrive.GoogleCalendarApi
         {
             EventsResource.ListRequest request = service.Events.List("primary");
 
-            request.TimeMin = DateTime.Now;
-            request.ShowDeleted = false;
+            request.TimeMin      = DateTime.Now;
+            request.ShowDeleted  = false;
             request.SingleEvents = true;
-            request.MaxResults = 20;
-            request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
+            request.MaxResults   = 20;
+            request.OrderBy      = EventsResource.ListRequest.OrderByEnum.StartTime;
 
             // List events.
             var events = request.Execute();
